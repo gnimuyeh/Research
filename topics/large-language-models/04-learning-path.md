@@ -1,142 +1,104 @@
-# Learning Path: Large Language Models
+# Where to Go Deeper — Curated Resources
 
-A step-by-step curriculum from beginner to advanced. Each stage includes specific resources verified via web search.
-
----
-
-## Stage 1: Prerequisites (2–4 weeks)
-
-**Goal:** Build the mathematical and machine learning foundations.
-
-| Topic | Resource | Format | Cost |
-|-------|----------|--------|------|
-| Linear algebra | 3Blue1Brown — *Essence of Linear Algebra* | YouTube | Free |
-| Probability & statistics | Khan Academy — Statistics & Probability | Online | Free |
-| Python programming | Python.org official tutorial | Online | Free |
-| Neural networks intro | 3Blue1Brown — *Neural Networks* series | YouTube | Free |
-| Deep learning foundations | Andrew Ng — *Deep Learning Specialization* | Coursera | Free to audit |
-
-**Milestone:** You can explain backpropagation, gradient descent, and why neural networks work.
+You've already learned the core concepts by reading this material. This page is a curated guide for going deeper, organized by format and commitment level. **You do NOT need to do all of these** — pick what matches your interest and learning style.
 
 ---
 
-## Stage 2: NLP Foundations (2–3 weeks)
+## If You Have 2 Hours
 
-**Goal:** Understand the NLP problems LLMs are designed to solve.
+These are the single best resources for each format:
 
-| Topic | Resource | Format | Cost |
-|-------|----------|--------|------|
-| NLP overview | *Speech and Language Processing* — Jurafsky & Martin (3rd ed. draft) | Free textbook (online) | Free |
-| Word embeddings | Read: Mikolov et al. — "Efficient Estimation of Word Representations in Vector Space" (2013) | Paper | Free |
-| Sequence models | Andrew Ng — Sequence Models course (DL Specialization, Course 5) | Coursera | Free to audit |
-
-**Milestone:** You understand tokenization, word embeddings, language modeling, and RNN/LSTM basics.
+| Format | Resource | Why |
+|--------|----------|-----|
+| Video | Andrej Karpathy — *"Let's build GPT from scratch"* (YouTube, ~2hrs) | The former Tesla/OpenAI director builds a working LLM from scratch, explaining every step. Even without coding, you'll see exactly how these models work. |
+| Article | Jay Alammar — *The Illustrated Transformer* (blog post) | The clearest visual explanation of the Transformer architecture on the internet. Diagrams walk you through every component. |
+| Book | Andriy Burkov — *The Hundred-Page Language Models Book* | Exactly what it sounds like — a short, clear book covering LLM essentials. Great for reinforcing what you've learned here. |
 
 ---
 
-## Stage 3: The Transformer (2–3 weeks)
+## If You Have a Weekend
 
-**Goal:** Deeply understand the architecture that powers all modern LLMs.
-
-| Topic | Resource | Format | Cost |
-|-------|----------|--------|------|
-| Attention mechanism | Read: Bahdanau et al. — "Neural Machine Translation by Jointly Learning to Align and Translate" (2014) | Paper | Free |
-| The Transformer | Read: Vaswani et al. — "Attention Is All You Need" (2017) | Paper ([arXiv](https://arxiv.org/abs/1706.03762)) | Free |
-| Visual explanation | Jay Alammar — *The Illustrated Transformer* | Blog post | Free |
-| Code implementation | Andrej Karpathy — "Let's build GPT from scratch" | YouTube | Free |
-| Textbook | Sebastian Raschka — *Build a Large Language Model (from Scratch)* | Book | ~$40 |
-
-**Milestone:** You can implement a small Transformer from scratch and explain multi-head attention, positional encoding, and the training loop.
+| Resource | Format | Time | What You'll Learn |
+|----------|--------|------|-------------------|
+| 3Blue1Brown — *Neural Networks* series | YouTube (4 videos) | 1–2 hrs | Beautiful visual explanations of how neural networks learn. The best foundation if you want to understand the "learning" part of machine learning. |
+| 3Blue1Brown — *Transformers explained visually* | YouTube | 45 min | Visual walkthrough of attention and transformers, building on the neural networks series. |
+| *ChatGPT Prompt Engineering for Developers* | DeepLearning.AI short course (free) | 1–2 hrs | Hands-on guide to getting better results from LLMs through prompting techniques. Practical and immediately useful. |
+| HuggingFace NLP Course — Chapters 1-2 | Online course (free) | 3–4 hrs | If you want to actually *use* LLMs programmatically, this teaches you the HuggingFace library, the standard tool for working with open-source models. |
 
 ---
 
-## Stage 4: Pre-training & Scaling (2–3 weeks)
+## If You Want a Serious Deep Dive (weeks)
 
-**Goal:** Understand how LLMs are trained at scale and what drives their performance.
+### Best Books (in order of recommendation)
 
-| Topic | Resource | Format | Cost |
-|-------|----------|--------|------|
-| GPT architecture evolution | Read: GPT-1 (2018), GPT-2 (2019), GPT-3 (2020) papers | Papers | Free |
-| BERT vs GPT | Read: BERT paper (Devlin et al., 2018) | Paper ([arXiv](https://arxiv.org/abs/1810.04805)) | Free |
-| Scaling laws | Read: Kaplan et al. (2020) and Chinchilla/Hoffmann et al. (2022) | Papers | Free |
-| Training infrastructure | Google DeepMind — *How to Scale Your Model* | Free ebook | Free |
-| Comprehensive survey | Read: Zhao et al. — "A Survey of Large Language Models" (2023) | Paper ([arXiv](https://arxiv.org/abs/2303.18223)) | Free |
+1. **Sebastian Raschka — *Build a Large Language Model (from Scratch)* (~$40)**
+   The gold standard. Walks you through building a working Transformer, tokenizer, and training loop. Even if you don't code along, the explanations are the clearest in any book. Raschka is a professor and former ML researcher at Lightning AI.
 
-**Milestone:** You can explain CLM vs MLM, why scale matters, compute-optimal training, and the trade-offs between model size and data.
+2. **Jay Alammar & Maarten Grootendorst — *Hands-On Large Language Models* (~$50)**
+   More practical than Raschka's book — focuses on using LLMs for real tasks: search, classification, summarization, RAG. Beautiful visual explanations from the author of The Illustrated Transformer.
 
----
+3. **Tong Xiao & Jingbo Zhu — *Foundations of Large Language Models* (free ebook)**
+   A comprehensive textbook covering pre-training, generation, prompting, alignment, and inference. More academic but thorough. Good for theoretical depth.
 
-## Stage 5: Alignment & RLHF (1–2 weeks)
+4. **Jurafsky & Martin — *Speech and Language Processing* (3rd ed., free online)**
+   The classic NLP textbook, updated for the LLM era. Broader than just LLMs — covers the entire NLP landscape. Best as a reference rather than reading cover to cover.
 
-**Goal:** Understand how raw LLMs are turned into helpful, safe AI assistants.
+### Best Courses
 
-| Topic | Resource | Format | Cost |
-|-------|----------|--------|------|
-| RLHF pipeline | Read: Ouyang et al. — "Training language models to follow instructions with human feedback" (2022) | Paper ([arXiv](https://arxiv.org/abs/2203.02155)) | Free |
-| RLHF explainer | Chip Huyen — "RLHF: Reinforcement Learning from Human Feedback" | Blog post | Free |
-| DPO | Read: Rafailov et al. — "Direct Preference Optimization" (2023) | Paper | Free |
-| Constitutional AI | Read: Bai et al. — "Constitutional AI" (2022) | Paper | Free |
-| Course | DeepLearning.AI & AWS — *Generative AI with Large Language Models* | Coursera | Free to audit |
+1. **DeepLearning.AI & AWS — *Generative AI with Large Language Models* (Coursera, free to audit)**
+   The most popular structured course on LLMs. Covers the full pipeline: pre-training, fine-tuning, RLHF, deployment. About 3 weeks of effort.
 
-**Milestone:** You can explain the SFT → RM → PPO pipeline, why alignment works, and alternatives like DPO and Constitutional AI.
+2. **Stanford CS224N — NLP with Deep Learning (lectures free on YouTube)**
+   A full university course. Goes deeper into the math and theory than the Coursera course. Demanding but rewarding.
 
----
+3. **Stanford CS324 — Large Language Models (lecture notes online)**
+   Graduate-level course specifically on LLMs — architecture, training, capabilities, limitations, societal impact. The notes are excellent reading material on their own.
 
-## Stage 6: Prompting & Practical Use (1–2 weeks)
-
-**Goal:** Learn to effectively use and prompt LLMs.
-
-| Topic | Resource | Format | Cost |
-|-------|----------|--------|------|
-| Few-shot learning | Read: Brown et al. — "Language Models are Few-Shot Learners" (GPT-3, 2020) | Paper | Free |
-| Chain-of-thought | Read: Wei et al. — "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models" (2022) | Paper ([arXiv](https://arxiv.org/abs/2201.11903)) | Free |
-| ReAct | Read: Yao et al. — "ReAct: Synergizing Reasoning and Acting" (2023) | Paper | Free |
-| Practical prompting | DeepLearning.AI — *ChatGPT Prompt Engineering for Developers* | Short course | Free |
-| HuggingFace ecosystem | HuggingFace NLP Course | Online course | Free |
-
-**Milestone:** You can design effective prompts, use CoT reasoning, and build applications with the HuggingFace Transformers library.
+4. **Cohere's LLM Course (free)**
+   Beginner-friendly course from an LLM company. Covers NLP basics, LLM architecture, and practical use. Good if you want an industry perspective.
 
 ---
 
-## Stage 7: Advanced Topics (2–4 weeks)
+## If You Want to Stay Current
 
-**Goal:** Explore the cutting edge of LLM research and engineering.
+The LLM field moves extremely fast. Here's how to keep up:
 
-| Topic | Resource | Format | Cost |
-|-------|----------|--------|------|
-| RAG | Read: Lewis et al. — "Retrieval-Augmented Generation" (2020) | Paper ([arXiv](https://arxiv.org/abs/2005.11401)) | Free |
-| Fine-tuning (LoRA) | Read: Hu et al. — "LoRA: Low-Rank Adaptation of Large Language Models" (2021) | Paper | Free |
-| Mixture of Experts | Read: Fedus et al. — "Switch Transformers" (2022) | Paper | Free |
-| Multimodal LLMs | Explore: GPT-4V technical report, LLaVA paper | Papers | Free |
-| Agentic AI | Read: Yao et al. — ReAct; explore LangChain, CrewAI frameworks | Papers + docs | Free |
-| Applied LLM building | *Hands-On Large Language Models* — Jay Alammar & Maarten Grootendorst | Book | ~$50 |
-| Full-stack LLM apps | Full Stack LLM Bootcamp | Online recordings | Free |
-
-**Milestone:** You can build RAG systems, fine-tune models with LoRA, and design agentic AI applications.
+| Resource | Format | Frequency |
+|----------|--------|-----------|
+| Sebastian Raschka — *Ahead of AI* newsletter | Email | Bi-weekly |
+| The Batch (by Andrew Ng, DeepLearning.AI) | Email | Weekly |
+| r/LocalLLaMA (Reddit) | Forum | Daily |
+| Papers With Code — LLM section | Website | Updated continuously |
+| HuggingFace blog | Blog | Weekly |
 
 ---
 
-## Stage 8: Research Frontiers (Ongoing)
+## Recommended Learning Sequences
 
-**Goal:** Stay current with the rapidly evolving field.
+### "I just want to understand what's going on" (5–10 hours)
+1. Read the materials in this folder (you're doing this now)
+2. Watch 3Blue1Brown's Neural Networks + Transformers series (2 hrs)
+3. Read Jay Alammar's *The Illustrated Transformer* (1 hr)
+4. Take the ChatGPT Prompt Engineering short course (1.5 hrs)
 
-| Activity | Resource |
-|----------|----------|
-| Weekly paper tracking | Sebastian Raschka's *Ahead of AI* newsletter |
-| Paper discussions | r/MachineLearning, r/LocalLLaMA (Reddit) |
-| Arxiv tracking | [Papers With Code](https://paperswithcode.com/) — LLM section |
-| Open-source models | HuggingFace model hub, Llama, Mistral, DeepSeek releases |
-| Benchmarks | MMLU, HumanEval, MATH, ARC, LiveBench |
-| Stanford course | CS324 — Large Language Models (Stanford, lecture notes online) |
+### "I want to really understand the technology" (20–40 hours)
+1. Everything in the sequence above
+2. Watch Karpathy's "Let's build GPT from scratch" (2 hrs)
+3. Read Raschka's *Build a Large Language Model (from Scratch)*
+4. Take the DeepLearning.AI Generative AI course on Coursera
+
+### "I want to build things with LLMs" (40+ hours)
+1. Everything in the sequence above
+2. Complete the HuggingFace NLP Course
+3. Read *Hands-On Large Language Models* (Alammar & Grootendorst)
+4. Build a RAG application with a framework like LangChain or LlamaIndex
+5. Fine-tune an open-source model (Llama, Mistral) using LoRA
 
 ---
 
-## Quick-Start Path (for the impatient)
+## What You Do NOT Need to Do
 
-If you want the fastest path to understanding LLMs:
-
-1. Watch Andrej Karpathy's "Let's build GPT from scratch" (2 hours)
-2. Read *The Hundred-Page Language Models Book* by Andriy Burkov
-3. Take the HuggingFace NLP Course
-4. Read the Transformer paper and the GPT-3 paper
-5. Build something with the HuggingFace Transformers library
+- **Read the original research papers** — unless you're pursuing research yourself. The resources above explain everything in them more clearly.
+- **Learn advanced math** — to *understand* LLMs conceptually, you don't need linear algebra or calculus. You only need math if you want to *build* them.
+- **Know how to code** — to *use* LLMs effectively (prompting, RAG, etc.), you need minimal coding. To build/train models, you need Python.
+- **Understand every architecture variant** — new models come out weekly. Understanding the core Transformer is enough; everything else is a variation on it.
