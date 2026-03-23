@@ -182,9 +182,10 @@ The newest approach — an AI that doesn't just suggest matches but actively fac
 
 ### The "Chatfishing" Problem
 The same LLM technology is being used by users to cheat:
-- People paste conversations into ChatGPT and ask it to craft witty responses
-- Some users let AI handle entire conversation threads
-- 2025 surveys show growing concern that "you never know if you're talking to a person or their AI"
+- **26% of singles** now use AI to enhance dating messages (up 333% year-over-year)
+- **60% of dating app users** believe they've encountered AI-written conversations
+- People are only **57% accurate** at identifying AI-generated text
+- The **Rizz app** (for AI message crafting) had ~1.5 million monthly active users
 - Scientific American called this "a modern Turing test" for dating
 
 ---

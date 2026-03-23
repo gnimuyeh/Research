@@ -114,10 +114,11 @@ Early AI adoption was invisible to users:
 
 After ChatGPT showed what LLMs could do, dating apps rushed to integrate visible AI features:
 
-- **Bumble's Deception Detector** (February 2024): AI that proactively identifies and blocks fake profiles, spam, and scam accounts before users encounter them
-- **Tinder's Face Check** (expanded 2025): Mandatory facial verification using video selfies and AI matching — users must prove they look like their photos
-- **Hinge's AI recommendation engine** (late 2025): Analyzes behavior patterns to surface profiles more likely to lead to mutual interest
-- **Bumble's "For You" page** (2025): AI-curated profiles, replacing the traditional swipe deck
+- **Bumble's Deception Detector** (February 2024): AI that proactively identifies and blocks 95% of fake profiles before users see them. Reduced user reports of fakes by 45% in two months.
+- **Tinder's Face Check** (expanded 2025): Mandatory facial verification creating a 3D "FaceMap" from video selfies. Reduced bad actor exposure by 60%. Part of a **$60 million AI investment** by Tinder.
+- **Tinder's "Chemistry"** (2025): AI feature that learns about users through questions and Camera Roll photo analysis to give "a single drop" of targeted recommendations instead of mass swiping.
+- **Hinge's AI recommendation engine** (late 2025): Users are 8x more likely to go on a date with their "Most Compatible" AI match.
+- **Bumble 2.0** (launching Q2 2026): Complete platform rebuild. AI assistant **"Bee"** synthesizes profile data and behavior to identify one highly compatible profile at a time, with an explanation of *why* they match.
 
 ### Phase 3: AI-Native Apps (2025–2026)
 

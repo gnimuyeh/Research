@@ -38,7 +38,7 @@ The dating app world is far more consolidated than most people realize:
 
 ### The New Wave (AI-Native Startups)
 - **Known** — Voice AI dating (Stanford dropouts, raised $9.7M)
-- **Sitch** — AI matchmaker backed by a16z ($5M seed)
+- **Sitch** — AI matchmaker backed by a16z ($9M total raised, per-match pricing: 3 matches/$89.99)
 - **Overtone** — Founded by Hinge creator Justin McLeod (backed by Match Group)
 - **Iris Dating** — AI-based physical attraction prediction
 - **Meeno** — AI relationship mentor (not a dating app per se)
